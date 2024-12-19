@@ -1,0 +1,54 @@
+{
+    "tamil": {
+        "menu": [ {
+            "navtitle": "தமிழ் இசைச் சங்கம்",
+            "path": "/",
+            "details": [
+            {
+              "subtitle": "தமிழ் இசைச் சங்க வரலாறு",
+              "path": "/history"
+            },
+            {
+              "subtitle": "நிர்வாகக் குழு",
+              "childsubtitle": [
+                { "description": "தமிழ் இசைச் சங்க ஆட்சிக் குழு", "path": "/trustees" },
+                { "description": "தலைவர்கள்", "path": "/presidents-and-secretaries" }
+              ]
+            }
+          ]
+            }],
+        "content": {
+            "home": "வணக்கம்! நாங்கள் உங்கள் தேவைகளுக்கு சரியான தீர்வுகளை வழங்குகிறோம்.",
+            "about": "நாங்கள் ஒரு முன்னணி நிறுவனம்."
+        }
+    },
+    "english": {
+        "menu": [ {
+            "navtitle": "Home",
+            "path": "/",
+            "details": [
+              {
+                "subtitle": "History",
+                "path": "/history"
+              },
+              {
+                "subtitle": "Board",
+                "childsubtitle": [
+                  {
+                    "description": "Board of Trustees",
+                    "path": "/trustees"
+                  },
+                  {
+                    "description": "Presidents and Secretaries",
+                    "path": "/presidents-and-secretaries"
+                  }
+                ]
+              }
+            ]            
+            }],
+        "content": {
+            "home": "Welcome! We provide the best solutions for your needs.",
+            "about": "We are a leading company."
+        }
+    }
+}

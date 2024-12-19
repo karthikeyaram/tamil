@@ -1,0 +1,91 @@
+/* Navbar basic styles */
+.navbar {
+    background-color: #111f49;
+    padding: 10px;
+  }
+  
+  .navbar button {
+    color: white;
+    background-color: #111f49;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu-item {
+    position: relative; /* Needed for dropdown positioning */
+    margin: 5px 0;
+  }
+  
+  .menu-item > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    display: block;
+  }
+  
+  /* Submenu hidden by default */
+  .submenu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Hide by default */
+    position: absolute;
+    top: 100%; /* Position below parent */
+    left: 0;
+    background-color: #111f49;
+    z-index: 1;
+  }
+  
+  .submenu-item > a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 6px 10px;
+    display: block;
+  }
+  
+  /* Childsubmenu hidden by default */
+  .childsubmenu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Hide by default */
+    position: absolute;
+    top: 0;
+    left: 100%; /* Position to the right of parent */
+    background-color: #111f49;
+    z-index: 1;
+  }
+  
+  .childsubmenu-item > a {
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+    padding: 4px 8px;
+    display: block;
+  }
+  
+  /* Show submenu on hover */
+  .menu-item:hover > .submenu-list {
+    display: block;
+  }
+  
+  /* Show childsubmenu on hover */
+  .submenu-item:hover > .childsubmenu-list {
+    display: block;
+  }
+  
+  /* Hover styles */
+  .navbar a:hover {
+    color: #14bef1;
+  }
+  
